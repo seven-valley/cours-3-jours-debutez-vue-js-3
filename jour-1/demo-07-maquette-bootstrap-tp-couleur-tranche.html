@@ -23,23 +23,23 @@
                  type="text" 
                  aria-label="Search"
                 class="form-control"
-                v-model="poids" placeholder="poids">
+                v-model="poids" placeholder="Poids en kilogramme">
                 <input
                  type="text" 
                  aria-label="Search"
                 class="form-control my-3"
-                v-model="taille" placeholder="taille" >
+                v-model="taille" placeholder="Taille en mètre" >
                 <button @click="calculer()" class="btn btn-primary my-3">Action</button>
-                <div class="alert alert-warning" role="alert" v-if="imc > 0 && imc < 18.5">
-                  <h1 class="h3">{{imc}}</h1>
+                <div class="alert alert-warning" role="alert">
+                  <h1 class="h3">18</h1>
                   Maigreur
                 </div>
-                <div class="alert alert-success" role="alert"  v-else-if="imc > 0 &&imc <= 25">
-                  <h1 class="h3">{{imc}}</h1>
+                <div class="alert alert-success" role="alert">
+                  <h1 class="h3">24,2</h1>
                   Normal
                 </div>
-                <div class="alert alert-danger" role="alert" v-else-if="imc > 0 && imc > 25">
-                  <h1 class="h3">{{imc}}</h1>
+                <div class="alert alert-danger" role="alert">
+                  <h1 class="h3">26</h1>
                   Surpoids
                 </div>
               </div>
@@ -49,33 +49,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   
     <script lang="javascript">
-      const { createApp } = Vue;
-      createApp({
-        data() {
-          return {
-            poids: '',
-            taille: '',
-            imc:0,
-            tranche:''
-          };
-        },
-        methods: {
-           
-            calculer(){
-                this.imc = this.poids/(this.taille *this.taille);
-                this.poids = this.taille = '';
-                this.imc = this.imc.toFixed(1);
-                if ( this.imc < 18.5){
-                    this.tranche =' maigreur'
-                }
-                else if ( this. imv <25){
-                    this.tranche ='normale'
-                }else {
-                    this.tranche ='surpoids';
-                }
-            }
-        }
-      }).mount("#app");
+     // ici votre code
     </script>
   </body>
 </html>

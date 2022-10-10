@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Alt + shit + fleche -> duplique ligne -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- emplacement html pour vue JS -->
+    <div class="container">
+        <div id="app">
+            <h1 class="mt-4">Mettre en Majuscule</h1>
+            <div class="mb-3 col-3">
+                <input
+                 type="text" 
+                 aria-label="Search"
+                class="form-control"
+                v-model="info" >
+                <button @click="toUp()" class="btn btn-primary my-3">Action</button>
+                <h1>{{ titre }}</h1>
+                <h2>{{info}}</h2>
+              </div>
+          </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  
+    <script lang="javascript">
+      const { createApp } = Vue;
+      createApp({
+        data() {
+          return {
+            titre: "Hello Vue 3!",
+            info:'lorem ipsum'
+          };
+        },
+        methods: {
+            toUp(){
+                console.log("abc");
+                // transformer input -> MAJ
+                this.titre = this.info.toUpperCase();
+                this.info =''; // vider input
+            },
+            calculer(){
+            }
+        }
+      }).mount("#app");
+    </script>
+  </body>
+</html>

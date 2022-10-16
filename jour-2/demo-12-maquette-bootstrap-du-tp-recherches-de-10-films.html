@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Alt + shit + fleche -> duplique ligne -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- emplacement html pour vue JS -->
+    <div id="app">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          
+            <h1 class="mt-4">trouver un Film</h1>
+            <div class="mb-3 col-3">
+              <input
+                type="text"
+                aria-label="Search"
+                class="form-control"
+                v-model="film"
+                placeholder="Film"
+              />
+            </div>
+              <button class="btn btn-success my-3" @click="onSearch()">
+                Rechercher
+              </button>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Film</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="film in films">
+                    <td>{{ film.Title }}</td>
+                    <td><img width="80" :src="film.Poster" /></td>
+                    <td>
+                      <button class="btn btn-primary">
+                        <i class="fa fa-plus"></i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            
+          </div>
+          <div class="col-4 mt-5 offset-1">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Film</th>
+                  <th>Image</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>titre</td>
+                  <td><img width="80" src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" /></td>
+                  <td>
+                    <button class="btn btn-danger">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script lang="javascript">
+      const { createApp } = Vue;
+      createApp({
+        data() {
+          return {
+
+           film:'',
+           films:[],
+          };
+        },
+        methods: {
+
+            onSearch(){
+                // https://www.omdbapi.com/?apikey=efdc2275&t=star%20wars
+                let key = 'efdc2275';
+                let film = this.film;// je prend le nom du film
+                this.film =''; // je vide le champ input
+                let url = 'http://www.omdbapi.com/?apikey='+key+'&s='+film;
+                fetch(url)
+                    .then((response) => response.json()) // je renvoie le contenu du body
+                    .then((data) => {
+                        this.films = data.Search;
+
+                    });
+            }
+        }
+      }).mount("#app");
+    </script>
+  </body>
+</html>

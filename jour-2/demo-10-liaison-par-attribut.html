@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Alt + shit + fleche -> duplique ligne -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- emplacement html pour vue JS -->
+    <div class="container">
+      <div id="app">
+        <h1 class="mt-4">Liaison par attribut</h1>
+        <img :src="myImage" alt="Star wars">
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script lang="javascript">
+      const { createApp } = Vue;
+      createApp({
+        data() {
+          return {
+           myImage:'../img/vue.png',
+        
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

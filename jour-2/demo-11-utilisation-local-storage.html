@@ -1,0 +1,28 @@
+
+<script>
+    let fruit = 'pomme';
+    // stocker dans le localStorage ?
+    localStorage.setItem('fruit',fruit);
+    //localStorage.fruit = fruit; // plus simple
+
+    // pour afficher le local Storage
+    //Si il y a qlq chose dans le local storage
+    if(localStorage.getItem('fruit') != null){
+        let fruit = localStorage.getItem('fruit')
+    }
+    else{
+        console.log('RIEN');
+    }
+    // vider completement le local S
+    //localStorage.clear();
+
+    // enlever le fruit
+    localStorage.removeItem('fruit');
+
+    let tableau = ['pomme','poire','cerise'];
+    // il faut serializer le tableau en string : chaine de caracteres
+    localStorage.setItem('tableau',JSON.stringify(tableau));
+    // il faut Déserializer le tableau JSON.parse()
+    let tableau2 = JSON.parse(localStorage.getItem('tableau'));
+    
+</script>

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Débutez avec Vue JS 3</title>
-    <link rel="icon" type="image/jpg" href="img/vue.png" />
+    <title>Débutez avec Vue JS 3 [3 jours]</title>
+    <link rel="icon" type="image/jpg" href="img/fav-icon_seven-valley.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -37,6 +37,16 @@
       .bg-gris {
         background-color: #eee;
       }
+      .my-blue{
+        color:#0D6EFD !important
+      }
+      .my-card{
+        width:113px;
+        height:113px;
+        background-color: #cdcdcd;
+        border-radius: 6px;
+      }
+      .text-grey{color:#444!important}
     </style>
   </head>
   <body>
@@ -85,12 +95,12 @@
         </p>
       </div>
     </header>
+    <!-------------------------------------------------------->
     <section class="bg-gris">
       <div class="container py-4">
-        <h1 class="h3">JOUR 1</h1>
         <div class="row">
           <div class="offset-2 col-8">
-
+            <h1 class="h3">JOUR 1</h1>
             <div class="accordion" id="accordionExample">
               <!-- bb   -->
               <div class="accordion-item">
@@ -103,7 +113,9 @@
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    JOUR 1 : Les &nbsp;<strong>3 notions</strong>&nbsp; de bases pour concevoir une application simple
+                    <span class="badge bg-secondary me-2">1</span> JOUR 1 : Les
+                    &nbsp;<strong>3 notions</strong>&nbsp; de bases pour
+                    concevoir une application simple
                   </button>
                 </h2>
                 <div
@@ -121,43 +133,97 @@
                             class="card-img-top"
                             alt="mettre en majuscule"
                           />
-                          
                         </div>
                       </div>
                       <div class="col-5">
                         <h1 class="h4">Première application</h1>
                         <h2 class="h6">Mettre un mot majuscule</h2>
-                        <!-- <kbd>ctrl</kbd> <kbd>d</kbd> -->
-                        <a 
-                        
-                        href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-03-mettre-un-mot-en-majuscule.html">
-                          <code class="text-sucess">
-                            demo-03-mettre-un-mot-en-majuscule.html
+                        <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-03-mettre-un-mot-en-majuscule.html"
+                        >
+                          <code>
+                          demo-03-mettre-un-mot-en-majuscule.html
                           </code></a
-                        ><br />
-                        Mise en place des 3 notions pour créer une application
-                        simple : <br />
-
-                        <code> interpolation </code> &nbsp;&nbsp;l'interpolation
-                        <br />
-                        <code> event binding </code> &nbsp;&nbsp;la liaison par
-                        évènement <br />
-                        <code> 2 ways binding </code> la liaison
-                        bidirectionnelle <br />
+                        >
                       </div>
-                      <div class="col-5 text-end pt-5">
-                        <a 
-                        
-                        href="./jour-1/demo-03-mettre-un-mot-en-majuscule.html" class="mt-5 btn btn-outline-success">
+                      <div class="col-5 text-end pt-2">
+                        <a
+                          href="./jour-1/demo-03-mettre-un-mot-en-majuscule.html"
+                          class="btn btn-outline-success"
+                        >
                           <i class="fa-solid fa-eye"></i> Voir la page
                         </a>
-                        <a 
-                        
-                        href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-03-mettre-un-mot-en-majuscule.html" class="mt-5 btn btn-dark">
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-03-mettre-un-mot-en-majuscule.html"
+                          class="btn btn-dark"
+                        >
                           <i class="fa-brands fa-github"></i> Code source
                         </a>
                       </div>
                     </div>
+                    <div class="row">
+                      <div class="col-10 offset-2">
+                        Mise en place des 3 notions pour créer une application
+                        simple :
+                        <table class="table table-stripped">
+                         
+                          <tbody>
+                            <tr>
+                              <td class="col-1">
+                                <span class="badge text-bg-primary">1</span>
+                              </td>
+                              <td class="col-3">
+                                <i class="fa-brands fa-vuejs me-3"></i>
+                                <code> interpolation </code>
+                              </td>
+                              <td>
+                                <a
+                                  href="https://vuejs.org/guide/essentials/template-syntax.html#text-interpolation"
+                                  class="ms-3"
+                                  >l'interpolation
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-1">
+                                <span class="badge text-bg-primary">2</span>
+                              </td>
+                              <td>
+                                <i class="fa-brands fa-vuejs me-3"></i>
+                                <code> event binding </code>
+                              </td>
+                              <td>
+                                <a
+                                  href="https://vuejs.org/guide/essentials/event-handling.html"
+                                  class="ms-3"
+                                  >la liaison par évènement
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="col-1">
+                                <span class="badge text-bg-primary">3</span>
+                              </td>
+                              <td>
+                                <i class="fa-brands fa-vuejs me-3"></i>
+                                <code> 2 ways binding </code>
+                              </td>
+                              <td>
+                                <a
+                                  href="https://vuejs.org/guide/essentials/forms.html"
+                                  class="ms-3"
+                                  >la liaison bidirectionnelle
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <!-- fin body-->
                   </div>
                 </div>
               </div>
@@ -173,8 +239,9 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    JOUR 1 : &nbsp;<strong> TP1 </strong>&nbsp; Calculer votre IMC
-                    <span class="ms-3 badge bg-success">TP</span>
+                    <span class="badge bg-secondary me-2">2</span> JOUR 1 :
+                    &nbsp;<strong> TP1 </strong>&nbsp; Calculer votre IMC
+                    <span class="ms-3 badge bg-success">TP 1</span>
                   </button>
                 </h2>
                 <div
@@ -187,240 +254,626 @@
                     <div class="row">
                       <div class="col-2">
                         <div class="card">
-                          <a 
-                              
-                              href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle">
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Ob%C3%A9sit%C3%A9_et_IMC.png/440px-Ob%C3%A9sit%C3%A9_et_IMC.png"
-                            class="card-img-top"
-                            alt="mettre en majuscule"
+                          <a
+                            href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle"
+                          >
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Ob%C3%A9sit%C3%A9_et_IMC.png/440px-Ob%C3%A9sit%C3%A9_et_IMC.png"
+                              class="card-img-top"
+                              alt="mettre en majuscule"
                           /></a>
-                          <div class="card-body text-center">
-                            wikipedia
-                            </div>
+                          <div class="card-body text-center">wikipedia</div>
                         </div>
                       </div>
                       <div class="col-5">
                         <h1 class="h4">
                           Calcul de l'indice de Masse Corporelle
                         </h1>
-                        
-                        <a href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-05-correction-tp-calculer-imc.html">
-                          <code class="text-sucess">
+
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-05-correction-tp-calculer-imc.html"
+                        >
+                          <code>
                             demo-05-correction-tp-calculer-imc.html
                           </code></a
-                        ><br />
-                        <table class="table table-stripped">
-                          <thead><tr>
-                            <th colspan="2">&nbsp;</th>
-                          </tr></thead>
+                        >
+                        <table class="table table-stripped mt-2">
+                          
                           <tbody>
                             <tr>
                               <td colspan="2">
                                 <code class="secondary"
-                                >imc = poids / (taille * taille)</code
-                              >
+                                  >imc = poids / (taille * taille)</code
+                                >
                               </td>
                             </tr>
                             <tr>
                               <td>tranche maigreur :</td>
                               <td>
-                                <code class="secondary"
-                          >  imc &lt; 18.5 </code
-                        >
+                                <code class="secondary"> imc &lt; 18.5 </code>
                               </td>
                             </tr>
                             <tr>
-                              <td> tranche surpoids</td>
+                              <td>tranche surpoids :</td>
                               <td>
-                                <code class="secondary"
-                          >  18.5 &lt; imc &lt; 25 </code
-                        >
+                                <code class="secondary">
+                                  18.5 &lt; imc &lt; 25
+                                </code>
                               </td>
                             </tr>
                             <tr>
-                              <td> tranche normal :</td>
+                              <td>tranche normal :</td>
                               <td>
-                                <code class="secondary"
-                          >imc &gt; 25 </code
-                        >
+                                <code class="secondary">imc &gt; 25 </code>
                               </td>
                             </tr>
-                            <tr><td colspan="2">
-                              <a 
-                              
-                              href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle">Documentation wikipedia imc </a>
-                            </td></tr>
+                            <tr>
+                              <td colspan="2">
+                                <a
+                                  href="https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle"
+                                  >Documentation wikipedia imc
+                                </a>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
-                        
                       </div>
                       <div class="col-5 text-end pt-5">
-
-                        <a  href="./jour-1/demo-04-maquette-bootstrap-tp-calculer-imc.html" class="mt-5 btn btn-outline-danger">
+                        <a
+                          href="./jour-1/demo-04-maquette-bootstrap-tp-calculer-imc.html"
+                          class="mt-5 btn btn-outline-danger"
+                        >
                           <i class="fa-solid fa-eye"></i> maquette
                         </a>
-                        <a  href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-04-maquette-bootstrap-tp-calculer-imc.html" class="mt-5 btn btn-dark">
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-04-maquette-bootstrap-tp-calculer-imc.html"
+                          class="mt-5 btn btn-dark"
+                        >
                           <i class="fa-brands fa-github"></i> code source
                         </a>
-                        <a  href="./jour-1/demo-05-correction-tp-calculer-imc.html" class="mt-5 btn btn-outline-success">
+                        <a
+                          href="./jour-1/demo-05-correction-tp-calculer-imc.html"
+                          class="mt-5 btn btn-outline-success"
+                        >
                           <i class="fa-solid fa-eye"></i> correction
                         </a>
-                        <a  href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-05-correction-tp-calculer-imc.html" class="mt-5 btn btn-dark">
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-05-correction-tp-calculer-imc.html"
+                          class="mt-5 btn btn-dark"
+                        >
                           <i class="fa-brands fa-github"></i> code source
                         </a>
-                        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-<!-- bb   -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="headingThree">
-    <button
-      class="accordion-button collapsed"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapseThree"
-      aria-expanded="false"
-      aria-controls="collapseThree"
-    >
-      JOUR 1 : La directive structurelle &nbsp;<strong>v-if</strong>&nbsp;
-    </button>
-  </h2>
-  <div
-    id="collapseThree"
-    class="accordion-collapse collapse"
-    aria-labelledby="headingThree"
-    data-bs-parent="#accordionExample"
-  >
-    <div class="accordion-body">
-      <div class="row">
-        <div class="col-2">
-          <div class="card">
-            <img
-              src="./img/j1-3-v-if.jpg"
-              class="card-img-top"
-              alt="mettre en majuscule"
-            />
-          </div>
-        </div>
-        <div class="col-5">
-          <h1 class="h4">Directive structurelle</h1>
-          <h2 class="h6">v-if</h2>
-          <!-- <kbd>ctrl</kbd> <kbd>d</kbd> -->
-          <a href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html">
-            <code class="text-sucess">
-              demo-06-directive-structurelle-if.html
-            </code></a
-          ><br /><br />
-         <p> Les directives avec Vue JS permettent de remplacer le DOM
-         <br> En anglais : <code>
-          structural directive <br>
-        </code>
-         Les variables du data store sont connectées à cette directive structurelle
-        </p>
- <br />
+              <!-- bb   -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <span class="badge bg-secondary me-2">3</span> JOUR 1 : La
+                    directive structurelle &nbsp;<strong>v-if</strong>&nbsp;
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="card">
+                          <img
+                            src="./img/j1-3-v-if.jpg"
+                            class="card-img-top"
+                            alt="mettre en majuscule"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <h1 class="h4">Directive structurelle</h1>
+                        <h2 class="h6">v-if</h2>
 
-            
-        </div>
-        <div class="col-5 text-end pt-5">
-          <a  href="./jour-1/demo-06-directive-structurelle-if.html" class="mt-5 btn btn-outline-success">
-            <i class="fa-solid fa-eye"></i> démo
-          </a>
-          <a  href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html" class="mt-5 btn btn-dark">
-            <i class="fa-brands fa-github"></i> code source
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- dd  -->
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html"
+                        >
+                          <code>
+                            demo-06-directive-structurelle-if.html
+                          </code></a
+                        >
+                      </div>
+                      <div class="col-5 text-end pt-2">
+                        <a
+                          href="./jour-1/demo-06-directive-structurelle-if.html"
+                          class="btn btn-outline-success"
+                        >
+                          <i class="fa-solid fa-eye"></i> démo
+                        </a>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html"
+                          class="btn btn-dark"
+                        >
+                          <i class="fa-brands fa-github"></i> code source
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 offset-2">
+                        <p>
+                          Les directives avec Vue JS permettent de remplacer le
+                          DOM <br />
+                          En anglais :
+                          <code> structural directive <br /> </code>
+                          Les variables du data store sont connectées à cette
+                          directive structurelle
+                        </p>
+                        <hr />
+                        <i class="fa-brands fa-vuejs me-3"></i>
+                        <a
+                          href=" https://vuejs.org/guide/essentials/conditional.html"
+                          class="me-3"
+                          >Documentation Vue JS
+                        </a>
+                        <strong>v-if</strong>
+                        <hr />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dd  -->
 
-<!-- bb   -->
-<div class="accordion-item">
-  <h2 class="accordion-header" id="headingFour">
-    <button
-      class="accordion-button collapsed"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#collapseFour"
-      aria-expanded="false"
-      aria-controls="collapseFour"
-    >
-      JOUR 1 : &nbsp;<strong> TP2 </strong>&nbsp; Afficher une couleur différente pour chaque tranche de l'IMC
-      <span class="ms-3 badge bg-success">TP</span>
-    </button>
-  </h2>
-  <div
-    id="collapseFour"
-    class="accordion-collapse collapse"
-    aria-labelledby="headingFour"
-    data-bs-parent="#accordionExample"
-  >
-    <div class="accordion-body">
-      <div class="row">
-        <div class="col-2">
-          <div class="card">
-            <img
-              src="./img/j1-4-tp-imc-couleur.jpg"
-              class="card-img-top"
-              alt="mettre en majuscule"
-            />
-          </div>
-        </div>
-        <div class="col-5">
-          <h1 class="h4">Afficher une couleur différente</h1>
-          <h2 class="h6">pour chaque tranche de l'IMC</h2>
-          <a href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html">
-            <code class="text-sucess">
-              demo-08-correction-tp-imc-avec-couleurs.html
-            </code></a
-          >
-          <a href=""></a>
-          <hr>
-          <i class="fa-brands fa-vuejs me-3"></i> v-if <a href=" https://vuejs.org/guide/essentials/conditional.html">Documentation Vue JS  </a>
-          <hr
-         
-           <hr>
-           <i class="fa-brands fa-bootstrap me-3"></i> <a href="https://getbootstrap.com/docs/5.2/components/alerts/">Documentation Alert Bootstrap</a>
-           <hr>
- <br />
+              <!-- bb   -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <span class="badge bg-secondary me-2">4</span> JOUR 1 :
+                    &nbsp;<strong> TP2 </strong>&nbsp; Afficher une couleur
+                    différente pour chaque tranche de l'IMC
+                    <span class="ms-3 badge bg-success">TP 2</span>
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="card">
+                          <img
+                            src="./img/j1-4-tp-imc-couleur.jpg"
+                            class="card-img-top"
+                            alt="mettre en majuscule"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <h1 class="h4">Afficher une couleur différente</h1>
+                        <h2 class="h6">pour chaque tranche de l'IMC</h2>
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-06-directive-structurelle-if.html"
+                        >
+                          <code>
+                            demo-08-correction-tp-imc-avec-couleurs.html
+                          </code></a
+                        >
+                      </div>
+                    </div>
 
-            
-        </div>
-        <div class="col-5 text-end pt-5">
-
-          <a  href="./jour-1/demo-07-maquette-bootstrap-tp-calculer-imc.html" class="mt-5 btn btn-outline-danger">
-            <i class="fa-solid fa-eye"></i> maquette
-          </a>
-          <a  href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-07-maquette-bootstrap-tp-couleur-tranche.html" class="mt-5 btn btn-dark">
-            <i class="fa-brands fa-github"></i> code source
-          </a>
-          <a  href="./jour-1/demo-08-correction-tp-imc-avec-couleurs.html" class="mt-5 btn btn-outline-success">
-            <i class="fa-solid fa-eye"></i> correction
-          </a>
-          <a  href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-07-maquette-bootstrap-tp-couleur-tranche.html" class="mt-5 btn btn-dark">
-            <i class="fa-brands fa-github"></i> code source
-          </a>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- dd  -->
-
+                    <div class="row">
+                      <div class="col-5 offset-2">
+                        <hr />
+                        <i class="fa-brands fa-vuejs me-3"></i>
+                        <a
+                          class="me-3"
+                          href="https://vuejs.org/guide/essentials/conditional.html"
+                          >Documentation Vue JS
+                        </a>
+                        <strong>v-if</strong>
+                        <hr />
+                        <i class="fa-brands fa-bootstrap me-3"></i>
+                        <a
+                          href="https://getbootstrap.com/docs/5.2/components/alerts/"
+                          >Documentation Alert Bootstrap</a
+                        >
+                        <hr />
+                        <br />
+                      </div>
+                      <div class="col-5 text-end">
+                        <a
+                          href="./jour-1/demo-07-maquette-bootstrap-tp-calculer-imc.html"
+                          class="btn btn-outline-danger"
+                        >
+                          <i class="fa-solid fa-eye"></i> maquette
+                        </a>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-07-maquette-bootstrap-tp-couleur-tranche.html"
+                          class="btn btn-dark"
+                        >
+                          <i class="fa-brands fa-github"></i> code source
+                        </a>
+                        <a
+                          href="./jour-1/demo-08-correction-tp-imc-avec-couleurs.html"
+                          class="mt-4 btn btn-outline-success"
+                        >
+                          <i class="fa-solid fa-eye"></i> correction
+                        </a>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-1/demo-07-maquette-bootstrap-tp-couleur-tranche.html"
+                          class="mt-4 btn btn-dark"
+                        >
+                          <i class="fa-brands fa-github"></i> code source
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dd  -->
             </div>
           </div>
-          <div class="col-6"></div>
         </div>
-
-        <br /><br /><br /><br /><br /><br /><br />
       </div>
+      <!-------------------------------->
+      <div class="container py-4">
+        <div class="row">
+          <div class="offset-2 col-8">
+            <h1 class="h3">JOUR 2</h1>
+            <div class="accordion" id="accordionExample">
+              <!-- bb   -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="j2One">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseJ2One"
+                    aria-expanded="false"
+                    aria-controls="collapseJ2One"
+                  >
+                    <span class="badge bg-secondary me-2">1</span> JOUR 2 : La
+                    directive structurelle &nbsp;<strong>v-for</strong>
+                  </button>
+                </h2>
+                <div
+                  id="collapseJ2One"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="j2One"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="card">
+                          <img
+                            src="./img/j2-v-for.jpg"
+                            class="card-img-top"
+                            alt="mettre en majuscule"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <h1 class="h4">Directive structurelle</h1>
+                        <h2 class="h6">v-for</h2>
+
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-09-directive-struturelle-for-avec-un-tableau.html"
+                        >
+                          <code>
+                            demo-09-directive-struturelle-for-avec-un-tableau.html
+                          </code></a
+                        ><br />
+                        <p>
+                          Le tableaux Javascript est rélié en temps réel avec le
+                          tabelau HTML <br />
+                          En anglais :
+                          <code> structural directive </code><br />
+                          Les directives avec Vue JS permettent de remplacer le
+                          DOM
+                        </p>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <hr />
+                            <i class="fa-brands fa-vuejs me-3"></i>
+                            <a
+                              class="me-3"
+                              href="https://vuejs.org/guide/essentials/conditional.html"
+                              >Documentation Vue JS
+                            </a>
+                            <strong>v-for</strong>
+                            <hr />
+                          </div>
+                          <div class="col-6 text-end mt-4">
+                            <a
+                              href="./jour-2/demo-09-directive-struturelle-for-avec-un-tableau.html"
+                              class="btn btn-outline-success"
+                            >
+                              <i class="fa-solid fa-eye"></i> Voir la page
+                            </a>
+                            <a
+                              href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-09-directive-struturelle-for-avec-un-tableau.html"
+                              class="btn btn-dark"
+                            >
+                              <i class="fa-brands fa-github"></i> Code source
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dd  -->
+
+              <!-- bb   -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="xj2Thre">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseJ2Four"
+                    aria-expanded="false"
+                    aria-controls="collapseJ2Four"
+                  >
+                    <span class="badge bg-secondary me-2">2</span>JOUR 2 : La
+                    liaison par attribut &nbsp;<strong>:valeur</strong>
+                  </button>
+                </h2>
+                <div
+                  id="collapseJ2Four"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="xj2Four"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="card">
+                          <img
+                            src="./img/j2-bind.jpg"
+                            class="card-img-top"
+                            alt="mettre en majuscule"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <h1 class="h4">Liaison par attribut</h1>
+                        <h2 class="h6">
+                          :valeur &nbsp; / &nbsp; v-bind:valeur
+                        </h2>
+
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-10-liaison-par-attribut.html"
+                        >
+                          <code>
+                            demo-10-liaison-par-attribut.html
+                          </code></a
+                        >
+                      </div>
+                      <div class="col-5 text-end pt-2">
+                        <a
+                          href="./jour-2/demo-10-liaison-par-attribut.html"
+                          class="btn btn-outline-success"
+                        >
+                          <i class="fa-solid fa-eye"></i> Voir la page
+                        </a>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-10-liaison-par-attribut.html"
+                          class="btn btn-dark"
+                        >
+                          <i class="fa-brands fa-github"></i> Code source
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-10 offset-2">
+                        La liasion par attribut permet de relier des attribut de
+                        balises aux variables du data-store <br />
+                        En anglais :
+                        <code> attribute binding </code><br />
+
+                        <hr />
+
+                        <i class="fa-brands fa-vuejs me-3"></i>
+                        <a
+                          href="https://vuejs.org/guide/essentials/template-syntax.html#attribute-bindings"
+                          class="me-3"
+                          >Documentation Vue JS
+                        </a>
+                        <strong>:valeur</strong>
+                        <hr />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dd  -->
+              <!-- bb   -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="xj2Three">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseJ2Three"
+                    aria-expanded="false"
+                    aria-controls="collapseJ2Three"
+                  >
+                    <span class="badge bg-secondary me-2">3</span>JOUR 2 : Le
+                    &nbsp;<strong>local storage</strong>&nbsp; 20 Mo sur le navigateur
+                  </button>
+                </h2>
+                <div
+                  id="collapseJ2Three"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="xj2Three"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="my-card text-grey pt-3 text-center">
+                          <i class="fa-solid fa-database fa-2xl mt-4"></i>
+                          <div class="mt-2">20 Mo</div>
+                        </div>
+                      </div>
+                      <div class="col-5">
+                        <h1 class="h4">Local Storage</h1>
+                        <h2 class="h6">Stocker des chaînes de caractères sur le navigateur</h2>
+
+                         <code>
+                          <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-11-utilisation-local-storage.html"
+                        >
+                          <code>
+                            demo-11-utilisation-local-storage
+                          </code></a
+                        >
+                        <p class="mt-1">
+                          Il est possible de stocker des objets ou des tableaux sous forme de chaine de caractères
+                          
+                        </p>
+                        <hr />
+                           <img width="20" src="https://cdn.alsacreations.net/favicon-32x32.png" alt="alsacreations">
+                            <a
+                              class="ms-3"
+                              href="https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html"
+                              >Alsacreations démo local storage
+                            </a>
+                           
+                            <hr />
+
+                      </div>
+                      <div class="col-5 text-end pt-5">
+                        <a
+                          href="./jour-2/demo-11-utilisation-local-storage.html"
+                          class="mt-5 btn btn-outline-success"
+                        >
+                          <i class="fa-solid fa-eye"></i> Voir la page
+                        </a>
+                        <a
+                          href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-11-utilisation-local-storage.html.html"
+                          class="mt-5 btn btn-dark"
+                        >
+                          <i class="fa-brands fa-github"></i> Code source
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- dd  -->
+
+                           <!-- bb   -->
+              <!--
+                           <div class="accordion-item">
+                            <h2 class="accordion-header" id="xj2Four">
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseJ2Two"
+                                aria-expanded="false"
+                                aria-controls="collapseJ2Two"
+                              >
+                                <span class="badge bg-secondary me-2">4</span>JOUR 2 : Démonstration Rechercher et afficher une film avec <strong> fetch</strong>
+                              </button>
+                            </h2>
+                            <div
+                              id="collapseJ2Two"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="xj2Thre"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-2">
+                                    <div class="my-card text-grey pt-3 text-center">
+                                      <i class="fa-solid fa-database fa-2xl mt-4"></i>
+                                      <div class="mt-2">20 Mo</div>
+                                    </div>
+                                  </div>
+                                  <div class="col-5">
+                                    <h1 class="h4">Local Storage</h1>
+                                    <h2 class="h6">Stocker des chaînes de caractères sur le navigateur</h2>
+            
+                                     <code>
+                                      <i class="fa-solid fa-file my-blue me-1"></i></code><a
+                                      href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-11-utilisation-local-storage.html"
+                                    >
+                                      <code>
+                                        demo-11-utilisation-local-storage
+                                      </code></a
+                                    >
+                                    <p class="mt-1">
+                                      Il est possible de stocker des objets ou des tableaux sous forme de chaine de caractères
+                                      
+                                    </p>
+                                    <hr />
+                                       <img width="20" src="https://cdn.alsacreations.net/favicon-32x32.png" alt="alsacreations">
+                                        <a
+                                          class="ms-3"
+                                          href="https://www.alsacreations.com/article/lire/1402-web-storage-localstorage-sessionstorage.html"
+                                          >Alsacreations démo local storage
+                                        </a>
+                                       
+                                        <hr />
+            
+                                  </div>
+                                  <div class="col-5 text-end pt-5">
+                                    <a
+                                      href="./jour-2/demo-11-utilisation-local-storage.html"
+                                      class="mt-5 btn btn-outline-success"
+                                    >
+                                      <i class="fa-solid fa-eye"></i> Voir la page
+                                    </a>
+                                    <a
+                                      href="https://github.com/seven-valley/cours-3-jours-debutez-vue-js-3/blob/main/jour-2/demo-11-utilisation-local-storage.html.html"
+                                      class="mt-5 btn btn-dark"
+                                    >
+                                      <i class="fa-brands fa-github"></i> Code source
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          -->
+                          <!-- dd  -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-------------------------------->
     </section>
+
     <footer class="py-2 bg-dark">
       <div class="container px-5">
         <div class="row">
